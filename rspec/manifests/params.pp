@@ -4,7 +4,7 @@
 # It sets variables according to platform.
 #
 class my_apache::params {
-  case $osfamily {
+  case $::osfamily {
     'Debian': {
       $package_name = 'apache2'
       $service_name = 'apache2'
