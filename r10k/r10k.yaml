@@ -1,0 +1,9 @@
+cachedir: '/var/lib/cache/r10k'
+sources:
+  operations:
+    remote: 'git@github.com:my-org/org-operations-modules'
+    basedir: '/etc/puppetlabs/code/environments'
+git:
+  provider: 'shellgit'
+forge:
+  # proxy: 'http://my.site.proxy:3128'

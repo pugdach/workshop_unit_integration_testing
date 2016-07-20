@@ -1,6 +1,6 @@
 .*.sw?
 pkg
-spec/fixtures
+rspec/spec/fixtures
 .rspec_system
 .vagrant
 .bundle
