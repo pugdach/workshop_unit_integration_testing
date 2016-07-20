@@ -18,6 +18,7 @@ describe 'my_apache' do
 
           it { is_expected.to contain_service('my_apache') }
           it { is_expected.to contain_package('my_apache').with_ensure('present') }
+          it { is_expected.to contain_file('apache_config').with_ensure('file') }
         end
       end
     end

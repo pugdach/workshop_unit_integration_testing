@@ -7,8 +7,9 @@ class my_apache::service {
 
   $service_name = $my_apache::service_name
 
-  service { $service_name:
+  service { 'my_apache':
     ensure     => running,
+    name       => $service_name,
     enable     => true,
     hasstatus  => true,
     hasrestart => true,
