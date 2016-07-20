@@ -4,10 +4,11 @@
 #
 class my_apache::install {
 
+  $package_name = $my_apache::package_name
 
   package { 'my_apache':
     ensure => present,
-    name   => $::package_name,
+    name   => $package_name,
   }
 
 }

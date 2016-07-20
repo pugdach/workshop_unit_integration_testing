@@ -8,7 +8,7 @@ class my_apache::config {
 
   file { 'apache_config':
     ensure => file,
-    path   => "${config_path}/${config_file}",
+    path   => "${config_path}/${config_file}.tmp",
     source => "puppet:///modules/${module_name}/apache.conf.${::osfamily}",
   }
 }
